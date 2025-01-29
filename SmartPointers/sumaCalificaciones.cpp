@@ -22,9 +22,11 @@ int main() {
 
     int numero = 0;
     for (int i = 0; i < n; i++) {
-        cout << "Ingresa calificación: " << endl;
-        cin >> numero;
-        vec[i] = make_unique<int>(numero); 
+        try:
+            cout << "Ingresa calificación: " << endl;
+            cin >> numero;
+            vec[i] = make_unique<int>(numero);
+        exception 
     }
     int resultado = FuncionSumar(vec);
     float promedio = resultado/vec.size();
